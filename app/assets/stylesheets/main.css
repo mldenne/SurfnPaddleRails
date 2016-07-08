@@ -1,7 +1,13 @@
 /*background image*/
 
 header {
-  background-size: 100%;
+  background-size: cover;
+  background-image: url(surf-tropical.png);
+  padding-bottom: 80px;
+}
+
+.page-header {
+  border-bottom: none;
 }
 
 /* font modifications for general text*/
@@ -96,11 +102,18 @@ footer {
   text-align: center;
 }
 
+
 footer div .row {
   text-align: center;
   margin: 20px;
   line-height: 50px;
 }
+
+.footer_image {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 /*text over images*/
 h4 {
   position: absolute;

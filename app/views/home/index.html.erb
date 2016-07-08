@@ -1,10 +1,10 @@
 <div class="page-header">
+  <div class="background-image">
+    <%= image_tag "surf-tropical" %> <!-- image responsive? -->
+  </div>
   <h1><%= @title %></h1>
   <h6><%= @subtitle %></h6>
-  <%= image_tag "surf-tropical" %>
 </div>
-
-
 
   <main>
     <div class="container">
@@ -12,7 +12,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-7">
           <div class="blog-post">
-            <h2 class="blog-post-title">Super Cool Blog, Dude</h2>
+            <h2 class="blog-post-title">< #%= @posts.inspect%></h2>
             <p class="blog-post-meta">
               "June 20, 2016 by "
               <a href="#">Me</a>

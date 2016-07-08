@@ -1,28 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Surf-N-Paddle</title>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="container">
-          <div class="navbar-left">
-            <img src="img/logo-surf-and-paddle.svg" alt="Responsive image" />
-          </div>
-          <a class="navbar-brand" href="#"><p>SURF &amp; PADDLE CO. BLOG</p></a>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">ABOUT<span class="sr-only">(current)</span></a></li>
-            <li><a href="#">SEARCH <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
-          </ul>
-      </div>
-    </nav>
-
-    <h1>SURF & PADDLE CO.</h1>
-    <h6>A copy of a Fall 2013 IronYard project</h6>
-
-  </header>
 
   <main>
     <div class="container">
@@ -30,7 +5,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-7">
           <div class="blog-post">
-            <h2 class="blog-post-title">Super Cool Blog, Dude</h2>
+            <h2 class="blog-post-title"><%= @posts.inspect %></h2>
             <p class="blog-post-meta">
               "June 20, 2016 by "
               <a href="#">Me</a>
@@ -83,53 +58,3 @@
       </div>
     </div>
   </main>
-
-  <footer>
-    <div class="container">
-      <h3>MOST POPULAR POSTS</h3>
-      <hr>
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <div class="image">
-            <img src="https://unsplash.it/800?image=909" class="img-responsive" alt="Responsive image" />
-            <h4><span>Cool Post 1</span></h4>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="image">
-            <img src="https://unsplash.it/800?image=890" class="img-responsive" alt="Responsive image" />
-            <h4><span>Cool Post 2</span></h4>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="image">
-            <img src="https://unsplash.it/800?image=626" class="img-responsive" alt="Responsive image" />
-            <h4><span>Cool Post 3</span></h4>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="image">
-            <img src="https://unsplash.it/800?image=463" class="img-responsive" alt="Responsive image" />
-            <h4><span>Cool Post 4</span></h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <img src="img/logo-surf-and-paddle.svg" alt="Responsive image" />
-            &nbsp; Surf & Paddle Co.
-          </div>
-          <div class="col-md-6">
-            <p>
-              <a href="#">Nav Item 1</a> &nbsp;|&nbsp;
-              <a href="#">Nav Item 2</a> &nbsp;|&nbsp;
-              <a href="#">Nav Item 3</a> &nbsp;|&nbsp;
-              <a href="#">Nav Item 4</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>
