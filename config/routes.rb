@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'posts/index'
+  # get 'posts/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -8,10 +8,10 @@ Rails.application.routes.draw do
   root 'posts#index'
 
   # Example of regular route:
-  get 'posts/:id' => 'posts#show'
+  # get 'posts/:id' => 'posts#show'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+  get 'posts/:id' => 'posts#show', as: :post
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products

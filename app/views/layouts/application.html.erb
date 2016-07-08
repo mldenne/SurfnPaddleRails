@@ -17,7 +17,7 @@
           <div class="navbar-left">
             <%= image_tag "logo-surf-and-paddle" %>
           </div>
-          <a class="navbar-brand" href="#"><p>SURF &amp; PADDLE CO. BLOG</p></a>
+          <a class="navbar-brand"><%= link_to "SURF & PADDLE CO. BLOG", root_path %></a>
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">ABOUT<span class="sr-only">(current)</span></a></li>
             <li><a href="#">SEARCH <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
@@ -25,8 +25,8 @@
       </div>
     </nav>
     <div class="page-header">
-      <h1><%= @title %></h1>
-      <h6><%= @subtitle %></h6>
+      <h1>Surf & Paddle Co.</h1>
+      <h6>A Fourth Cohort Indianapolis IronYard Project</h6>
     </div>
   </header>
 
@@ -36,22 +36,13 @@
   <h3>MOST POPULAR POSTS</h3>
   <hr>
   <div class="row">
-    <div class="col-md-3 col-sm-6 footer_image">
-        <img src="https://unsplash.it/800?image=909" class="img-responsive" alt="Responsive image" />
-        <h4>Cool Post 1</h4>
-    </div>
-    <div class="col-md-3 col-sm-6 footer_image">
-        <img src="https://unsplash.it/800?image=890" class="img-responsive" alt="Responsive image" />
-        <h4>Cool Post 2</h4>
-    </div>
-    <div class="col-md-3 col-sm-6 footer_image">
-        <img src="https://unsplash.it/800?image=626" class="img-responsive" alt="Responsive image" />
-        <h4>Cool Post 3</h4>
-    </div>
-    <div class="col-md-3 col-sm-6 footer_image">
-        <img src="https://unsplash.it/800?image=463" class="img-responsive" alt="Responsive image" />
-        <h4>Cool Post 4</h4>
-    </div>
+    <%= @other_post.each { |post| }
+      <div class="col-md-3 col-sm-6 footer_image">
+          <img src="https://unsplash.it/800?image=909" class="img-responsive" alt="Responsive image" />
+          <h4><%= @title %></h4>
+      </div>
+    <% end %>
+  </div>
 
 
       <div class="container">
@@ -71,7 +62,6 @@
           </div>
         </div>
       </div>
-
     </footer>
   </body>
 </html>
