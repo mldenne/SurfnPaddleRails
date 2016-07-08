@@ -1,0 +1,116 @@
+/*background image*/
+
+header {
+  background-size: 100%;
+}
+
+/* font modifications for general text*/
+h1 {
+  text-align: center;
+  margin-top: 120px;
+  font-family: Tahoma, sans-serif;
+  font-size: 65px;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: Tahoma, sans-serif;
+  color: black;
+}
+
+h6 {
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+}
+
+/*Top navigation bar bootstrap modifications*/
+
+.navbar {
+  margin: auto;
+}
+
+.container {
+  margin: auto;
+}
+
+.navbar-left {
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-size: 12px;
+  color: black;
+  text-shadow: none;
+}
+
+.navbar-right {
+  font-size: 12px;
+}
+
+/*blog modifications to bootstrap*/
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 10px;
+}
+
+.sidebar-module img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar-module p {
+  text-align: center;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+/*list formatting*/
+ul {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+}
+
+/*modifications to pager links*/
+.pager li>a, .pager li>span {
+  text-align: center;
+  border: none;
+  border-radius: none;
+}
+
+li p {
+  display: inline-block;
+  text-align: left;
+  font-family: Tahoma, sans-serif;
+  background-color: lightblue;
+  padding: 3px;
+}
+
+/*footer modifications to bootstrap*/
+footer {
+  background-size: 100%;
+  text-align: center;
+}
+
+footer div .row {
+  text-align: center;
+  margin: 20px;
+  line-height: 50px;
+}
+/*text over images*/
+h4 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+}
+
+h4 span {
+  color: lightblue;
+  font: bold 20px Tahoma, sans-serif;
+  padding: 10px;
+}

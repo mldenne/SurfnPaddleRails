@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SurfnPaddleRails</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+          <div class="navbar-left">
+            <%= image_tag "logo-surf-and-paddle" %>
+          </div>
+          <a class="navbar-brand" href="#"><p>SURF &amp; PADDLE CO. BLOG</p></a>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">ABOUT<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">SEARCH <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+          </ul>
+      </div>
+    </nav>
+
+  <%= yield %>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+              <%= image_tag "logo-surf-and-paddle" %>
+              <%= @title %>
+          </div>
+          <div class="col-md-6">
+              <p>
+                <a href="#">Nav Item 1</a> &nbsp;|&nbsp;
+                <a href="#">Nav Item 2</a> &nbsp;|&nbsp;
+                <a href="#">Nav Item 3</a> &nbsp;|&nbsp;
+                <a href="#">Nav Item 4</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
