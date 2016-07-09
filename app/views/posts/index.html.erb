@@ -10,7 +10,7 @@
               <%= @post.created_at %>
               <a href="#"><%= @post.author %></a>
             </p>
-            <p><%= simple_format (@post.body) %></p>
+            <p><%= simple_format truncate(@post.body, length: 500) %></p>
             <p><%= link_to "Read More", post_path(id: @post.id) %></p>
             <nav>
               <ul class="pager">

@@ -38,9 +38,14 @@ h6 {
 .container {
   margin: auto;
 }
+.navbar a {
+  color: navy;
+  font-size: 16px;
+  font-weight: bold;
+}
 
 .navbar-left {
-  padding: 10px;
+  padding: 12px;
 }
 
 .navbar-brand {
@@ -54,6 +59,10 @@ h6 {
 }
 
 /*blog modifications to bootstrap*/
+main {
+  padding: 20px;
+}
+
 .row {
   margin-left: 0;
   margin-right: 0;
