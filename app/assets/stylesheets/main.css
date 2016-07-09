@@ -111,11 +111,17 @@ footer {
   text-align: center;
 }
 
+footer h3 {
+  background-color: #5ba0c1;
+  padding: 12px;
+  margin: auto;
+}
 
-footer div .row {
+.bottom_row {
+  background-color: #5ba0c1;
   text-align: center;
-  margin: 20px;
   line-height: 50px;
+  width: auto;
 }
 
 .footer_image {

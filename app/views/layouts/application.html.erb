@@ -34,7 +34,6 @@
 
   <footer>
     <h3>LATEST POSTS</h3>
-    <hr>
     <div class="row">
       <% @other_post.each do |post| %>
         <div class="col-md-3 col-sm-6 footer_image">
@@ -45,7 +44,7 @@
     </div>
 
 
-      <div class="container">
+      <div class="container bottom_row">
         <div class="row">
           <div class="col-md-6">
             <%= link_to image_tag("logo-surf-and-paddle"), root_path %>
