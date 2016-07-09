@@ -33,16 +33,16 @@
   <%= yield %>
 
   <footer>
-  <h3>MOST POPULAR POSTS</h3>
-  <hr>
-  <div class="row">
-    <%= @other_post.each { |post| }
-      <div class="col-md-3 col-sm-6 footer_image">
-          <img src="https://unsplash.it/800?image=909" class="img-responsive" alt="Responsive image" />
-          <h4><%= @title %></h4>
-      </div>
-    <% end %>
-  </div>
+    <h3>LATEST POSTS</h3>
+    <hr>
+    <div class="row">
+      <% @other_post.each do |post| %>
+        <div class="col-md-3 col-sm-6 footer_image">
+            <%= image_tag Faker::Placeholdit.image %>
+            <h4><%= link_to "#{post.title}", post_path(id: post.id) %></h4>
+        </div>
+      <% end %>
+    </div>
 
 
       <div class="container">
@@ -61,7 +61,6 @@
             </div>
           </div>
         </div>
-      </div>
     </footer>
   </body>
 </html>
