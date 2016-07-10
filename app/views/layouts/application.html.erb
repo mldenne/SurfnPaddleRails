@@ -19,13 +19,13 @@
             <%= link_to @blogtitle , root_path %>
           </div>
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">About<span class="sr-only">(current)</span></a></li>
             <li><a href="#">Search <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
           </ul>
       </div>
     </nav>
     <div class="page-header">
-      <h1><%= @title %> </h1>
+      <h1><%= link_to @title, root_path %> </h1>
       <h6><%= @subtitle %></h6>
     </div>
   </header>
@@ -34,15 +34,16 @@
 
   <footer>
     <h3>LATEST POSTS</h3>
-    <div class="row">
-      <% @other_post.each do |post| %>
-        <div class="col-md-3 col-sm-6 footer_image">
-            <%= link_to image_tag(post.image), post_path(id: post.id) %>
-            <h4><%= link_to "#{post.title}", post_path(id: post.id) %></h4>
-        </div>
-      <% end %>
-    </div>
-
+    <div class="container post_row">
+      <div class="row">
+        <% @other_post.each do |post| %>
+          <div class="col-md-3 col-sm-6 footer_image">
+              <%= link_to image_tag(post.image), post_path(id: post.id), class: "img-responsive" %>
+              <h4><%= link_to post.title, post_path(id: post.id) %></h4>
+          </div>
+        <% end %>
+      </div>
+  </div>
 
       <div class="container bottom_row">
         <div class="row">

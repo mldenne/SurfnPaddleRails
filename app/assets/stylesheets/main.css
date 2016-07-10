@@ -29,6 +29,14 @@ h6 {
   font-family: Tahoma, sans-serif;
 }
 
+a {
+  color: #073453;
+}
+
+a:hover {
+  color: whitesmoke;
+  text-decoration: none;
+}
 /*Top navigation bar bootstrap modifications*/
 
 .navbar {
@@ -39,9 +47,18 @@ h6 {
   margin: auto;
 }
 .navbar a {
-  color: navy;
+  color: #073453;
   font-size: 16px;
   font-weight: bold;
+}
+
+.navbar a:hover {
+  color: whitesmoke;
+}
+
+.nav > li > a:hover {
+  color: whitesmoke;
+  background-color: transparent;
 }
 
 .navbar-left {
@@ -60,7 +77,12 @@ h6 {
 
 /*blog modifications to bootstrap*/
 main {
+  background-color: #b4c9ce;
   padding: 20px;
+}
+
+.blog_main {
+  font-size: 14px;
 }
 
 .row {
@@ -90,19 +112,14 @@ ul {
   display: inline-block;
 }
 
-/*modifications to pager links*/
-.pager li>a, .pager li>span {
-  text-align: center;
-  border: none;
-  border-radius: none;
+/*modifications to nav links under blog*/
+.btn-default {
+  background-color: transparent;
+  border-color: none;
 }
 
-li p {
-  display: inline-block;
-  text-align: left;
-  font-family: Tahoma, sans-serif;
-  background-color: lightblue;
-  padding: 3px;
+.btn {
+  border-radius: none;
 }
 
 /*footer modifications to bootstrap*/
@@ -117,6 +134,35 @@ footer h3 {
   margin: auto;
 }
 
+.post_row {
+  width: auto;
+  padding: 0px;
+  /*display: inline-flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;*/
+}
+
+.footer_image {
+  opacity: 0.8;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.footer_image:hover {
+    opacity: 1;
+}
+
+
 .bottom_row {
   background-color: #5ba0c1;
   text-align: center;
@@ -124,9 +170,8 @@ footer h3 {
   width: auto;
 }
 
-.footer_image {
-  padding-left: 0px;
-  padding-right: 0px;
+.bottom_row .row {
+  font-size: 14px;
 }
 
 /*text over images*/

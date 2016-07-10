@@ -5,25 +5,32 @@
         <div class="col-md-1"></div>
         <div class="col-md-7">
           <div class="blog-post">
-            <h2 class="blog-post-title"><%= @post.title %></h2>
+            <%= image_tag @post.image, class: "img-responsive" %>
+            <%= link_to post_path(id: @post.id) do %>
+              <h2 class="blog-post-title"><%= @post.title %></h2>
+            <% end %>
             <p class="blog-post-meta">
-              <%= @post.created_at.strftime("%a, %b %e, %Y at %I:%M %p") %> by 
+              <%= @post.created_at.strftime("%a, %b %e, %Y at %I:%M %p") %> by
               <a href="#"><%= @post.author %></a>
             </p>
-            <p><%= simple_format truncate(@post.body, length: 500) %></p>
-            <p><%= link_to "Read More", post_path(id: @post.id) %></p>
+            <p><%= simple_format truncate(@post.body, length: 500), class: "blog_main" %></p>
             <nav>
-              <ul class="pager">
-                <li>
-                  <a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><p>Read Comments</p></a>
-                </li>
-                <li>
-                  <a href="#"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span><p>Read Later</p></a>
-                </li>
-                <li>
-                  <a href="#"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><p>Share This Post</p></a>
-                </li>
-              </ul>
+              <button type="button" class="btn btn-default" aria-label="Left Align">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                <%= link_to "Read More", post_path(id: @post.id) %>
+              </button>
+              <button type="button" class="btn btn-default" aria-label="Center Align">
+                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                Read Comments
+              </button>
+              <button type="button" class="btn btn-default" aria-label="Center Align">
+                <span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+                Read Later
+              </button>
+              <button type="button" class="btn btn-default" aria-label="Right Align">
+                <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+                Share This
+              </button>
             </nav>
           </div>
         </div>
