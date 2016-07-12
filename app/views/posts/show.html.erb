@@ -8,7 +8,7 @@
             <h2 class="blog-post-title"><%= @post.title %></h2>
             <p class="blog-post-meta">
               <%= @post.created_at.strftime("%a, %b %e, %Y at %I:%M %p") %> by
-              <a href="#"><%= @post.author_id %></a>
+              <a href="#"><%= @post.author.name %></a>
             </p>
             <p><%= simple_format @post.body, class: "blog_main" %></p>
             <!-- <p><%= link_to "Go to Home Page", root_path %></p> -->
@@ -34,7 +34,8 @@
         </div>
         <div class="col-md-3 blog-sidebar">
           <div class="sidebar-module">
-            <h6><%= @post.author_id %></h6>
+            <%= image_tag @post.author.selfie, class: "img-circle" %>
+            <h6><%= @post.author.name %></h6>
             <p>
               <a href="http://www.twitter.com">Twitter</a> &nbsp;|&nbsp;
               <a href="http://www.facebook.com">Facebook</a> &nbsp;|&nbsp;
