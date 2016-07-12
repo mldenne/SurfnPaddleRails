@@ -128,6 +128,10 @@ footer {
   text-align: center;
 }
 
+footer > .row {
+  display: flex;
+}
+
 footer h3 {
   background-color: #5ba0c1;
   padding: 12px;
@@ -137,6 +141,7 @@ footer h3 {
 .post_row {
   width: auto;
   padding: 0px;
+  display: flex;
   /*display: inline-flex;
   padding: 0;
   margin: 0;
