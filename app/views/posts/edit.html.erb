@@ -1,5 +1,13 @@
 <h2>Please edit your post here!</h2>
 
+<% if @post.errors.any? %>
+  <ul id="errors">
+    <% @post.errors.full_messages.each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+<% end %>
+
 <%= form_for @post do |f| %>
   <p>
     <%= f.label :author_id %>
