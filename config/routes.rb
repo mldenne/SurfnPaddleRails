@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :posts
+
   # get 'posts/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -11,7 +13,7 @@ Rails.application.routes.draw do
   # get 'posts/:id' => 'posts#show'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
-  get 'posts/:id' => 'posts#show', as: :post
+  # get 'posts/:id' => 'posts#show', as: :post
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
