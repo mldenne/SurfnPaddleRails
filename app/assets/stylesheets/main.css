@@ -1,0 +1,197 @@
+/*background image*/
+
+header {
+  background-size: cover;
+  background-image: url(surf-tropical.png);
+  padding-bottom: 80px;
+}
+
+.page-header {
+  border-bottom: none;
+}
+
+/* font modifications for general text*/
+h1 {
+  text-align: center;
+  margin-top: 120px;
+  font-family: Tahoma, sans-serif;
+  font-size: 65px;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: Tahoma, sans-serif;
+  color: black;
+}
+
+h6 {
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+}
+
+a {
+  color: #073453;
+}
+
+a:hover {
+  color: whitesmoke;
+  text-decoration: none;
+}
+/*Top navigation bar bootstrap modifications*/
+
+.navbar {
+  margin: auto;
+}
+
+.container {
+  margin: auto;
+}
+.navbar a {
+  color: #073453;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: whitesmoke;
+}
+
+.nav > li > a:hover {
+  color: whitesmoke;
+  background-color: transparent;
+}
+
+.navbar-left {
+  padding: 12px;
+}
+
+.navbar-brand {
+  font-size: 12px;
+  color: black;
+  text-shadow: none;
+}
+
+.navbar-right {
+  font-size: 12px;
+}
+
+/*blog modifications to bootstrap*/
+main {
+  background-color: #b4c9ce;
+  padding: 20px;
+}
+
+.blog-post-title {
+  text-align: left;
+}
+
+.blog_main {
+  font-size: 14px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 10px;
+}
+
+.sidebar-module img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar-module p {
+  text-align: center;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+/*list formatting*/
+ul {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+}
+
+/*modifications to nav links under blog*/
+.btn-default {
+  background-color: transparent;
+  border-color: none;
+}
+
+.btn {
+  border-radius: none;
+}
+
+/*footer modifications to bootstrap*/
+footer {
+  background-size: 100%;
+  text-align: center;
+}
+
+footer > .row {
+  display: flex;
+}
+
+footer h3 {
+  background-color: #5ba0c1;
+  padding: 12px;
+  margin: auto;
+}
+
+.post_row {
+  width: auto;
+  padding: 0px;
+  display: flex;
+  /*display: inline-flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;*/
+}
+
+.footer_image {
+  opacity: 0.8;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.footer_image:hover {
+    opacity: 1;
+}
+
+
+.bottom_row {
+  background-color: #5ba0c1;
+  text-align: center;
+  line-height: 50px;
+  width: auto;
+}
+
+.bottom_row .row {
+  font-size: 14px;
+}
+
+/*text over images*/
+h4 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+}
+
+/*form formatting*/
+h2 {
+  text-align: center
+}

@@ -1,0 +1,63 @@
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
+          <div class="blog-post">
+            <%= link_to post_path(id: @post.id) do %>
+              <h2 class="blog-post-title"><%= @post.title %></h2>
+            <% end %>
+            <p class="blog-post-meta">
+              <%= @post.created_at.strftime("%a, %b %e, %Y at %I:%M %p") %> by
+              <a href="#"><%= @post.author.name %></a>
+            </p>
+            <%= image_tag @post.image, class: "img-responsive" %>
+            <p><%= simple_format truncate(@post.body, length: 500), class: "blog_main" %></p>
+            <nav>
+              <button type="button" class="btn btn-default" aria-label="Left Align">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                <%= link_to "Read More", post_path(id: @post.id) %>
+              </button>
+              <button type="button" class="btn btn-default" aria-label="Center Align">
+                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                Read Comments
+              </button>
+              <button type="button" class="btn btn-default" aria-label="Center Align">
+                <span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+                Read Later
+              </button>
+              <button type="button" class="btn btn-default" aria-label="Right Align">
+                <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+                Share This
+              </button>
+            </nav>
+          </div>
+        </div>
+        <div class="col-md-3 blog-sidebar">
+          <div class="sidebar-module">
+            <%= image_tag @post.author.selfie, class: "img-circle" %>
+            <h6><%= @post.author.name %></h6>
+            <p>
+              <a href="http://www.twitter.com">Twitter</a> &nbsp;|&nbsp;
+              <a href="http://www.facebook.com">Facebook</a> &nbsp;|&nbsp;
+              <a href="http://www.instagram.com">Instagram</a>
+            </p>
+          <div class="sidebar-module">
+            <div class="media">
+              <a href="#">
+                <img class="media-object" src="https://unsplash.it/200?image686" alt="Responsive image" />
+                  <p>About this ad</p>
+              </a>
+            </div>
+            <div class="sidebar-module">
+              <h5>ABOUT THE AUTHOR</h5>
+              Cronut bitters taxidermy, cardigan chambray gluten-free polaroid ramps keffiyeh meditation kinfolk locavore art party swag sriracha. Health goth pickled gentrify shoreditch tofu, brunch keffiyeh. Messenger bag knausgaard heirloom bushwick, squid viral venmo farm-to-table. Cred franzen williamsburg before they sold out selfies. Freegan stumptown yuccie roof party mustache. Tilde letterpress listicle, chia cardigan authentic beard. Keytar swag wayfarers hoodie marfa.
+            </div>
+          </div>
+        <div class="col-md-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
