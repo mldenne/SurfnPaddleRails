@@ -81,6 +81,10 @@ main {
   padding: 20px;
 }
 
+.blog-post-title {
+  text-align: left;
+}
+
 .blog_main {
   font-size: 14px;
 }
@@ -187,8 +191,7 @@ h4 {
   width: 100%;
 }
 
-/*h4 span {
-  color: lightblue;
-  font: bold 20px Tahoma, sans-serif;
-  padding: 10px;
-}*/
+/*form formatting*/
+h2 {
+  text-align: center
+}

@@ -16,7 +16,7 @@
       <div class="container">
           <div class="navbar-left">
             <%= link_to image_tag("logo-surf-and-paddle"), root_path %>
-            <%= link_to @blogtitle , root_path %>
+            <%= link_to @blogtitle, root_path %>
           </div>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">About<span class="sr-only">(current)</span></a></li>
@@ -52,15 +52,10 @@
             <%= link_to @title , root_path %>
           </div>
           <div class="col-md-6">
-              <p>
-                <a href="#">Contact Us</a> &nbsp;|&nbsp;
-                <a href="#">How to Submit</a> &nbsp;|&nbsp;
-                <a href="#">Legal Stuff</a> &nbsp;|&nbsp;
-                <a href="#">Archives</a>
-              </p>
-            </div>
+            <%= link_to "Submit a New Blog Post Here", new_post_path %>
           </div>
         </div>
+      </div>
     </footer>
   </body>
 </html>
